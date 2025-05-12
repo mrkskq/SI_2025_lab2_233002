@@ -57,4 +57,17 @@
 
 
 
-### Тест случаи според критериумот Multiple Condition 
+### Тест случаи според критериумот Multiple Condition за условот if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+| | item.getPrice() > 300 | item.getDiscount() > 0 | item.getQuantity() > 10 | 
+| :---: | :---: | :---: | :---: | 
+| 1 | Т | X | X | 
+| 2 | F | T | X | 
+| 3 | F | F | T | 
+| 4 | F | F | F | 
+
+Потребни се минимум 4 тест случаи за да се постигне овој критериум. Ова е така бидејќи со Lazy Evaluation ќе се елиминираат некои од комбинациите од табелата. </br>
+Значи соодветно би ги имале следниве тест случаи:
+- TXX: ```allItems = List.of(new Item("Book", 10, 500, 0.0)), cardNumber = ""```
+- FTX: ```allItems = List.of(new Item("Book", 10, 200, 0.3)), cardNumber = ""```
+- FFT: ```allItems = List.of(new Item("Book", 15, 200, 0.0)), cardNumber = ""```
+- FFF: ```allItems = List.of(new Item("Book", 5, 200, 0.0)), cardNumber = ""```
