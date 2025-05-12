@@ -64,12 +64,12 @@
 | 4 | F | F | F | 
 
 Потребни се минимум 4 тест случаи за да се постигне овој критериум. Ова е така бидејќи со Lazy Evaluation ќе се елиминираат некои од комбинациите од табелата. Наместо да имаме 2^3=8 комбинации, ќе имаме само 4. Значи соодветно би ги имале следниве тест случаи:
-- TXX: ```allItems = List.of(new Item("Book", 10, 500, 0.0)), cardNumber = ""```
+- TXX: ```allItems = List.of(new Item("Book", 10, 500, 0.0)), cardNumber = "0122333444455555"```
 > Објаснување: Имаме услов составен од 3 под-услови кои се одделени со OR. Тоа значи дека, во првиов случај доволно е само item.getPrice() > 300 да биде True за целиот израз да се евалуира на True. Останатите две можат да бидат или True или False.
-- FTX: ```allItems = List.of(new Item("Book", 10, 200, 0.3)), cardNumber = ""```
+- FTX: ```allItems = List.of(new Item("Book", 10, 200, 0.3)), cardNumber = "0122333444455555"```
 > Објаснување: Во вториов случај ќе земеме item.getPrice() > 300 да биде False, и item.getDiscount() > 0 да биде True по што целиот израз ќе се евалуира на True. Последното може да биде или True или False.
-- FFT: ```allItems = List.of(new Item("Book", 15, 200, 0.0)), cardNumber = ""```
+- FFT: ```allItems = List.of(new Item("Book", 15, 200, 0.0)), cardNumber = "0122333444455555"```
 > Објаснување: Во третиов случај ќе земеме item.getPrice() > 300 да биде False, item.getDiscount() > 0 да биде False и item.getQuantity() > 10 да биде True по што целиот израз ќе се евалуира на True. 
-- FFF: ```allItems = List.of(new Item("Book", 5, 200, 0.0)), cardNumber = ""```
+- FFF: ```allItems = List.of(new Item("Book", 5, 200, 0.0)), cardNumber = "0122333444455555"```
 > Објаснување: Во четвртиов случај ќе земеме item.getPrice() > 300 да биде False, item.getDiscount() > 0 да биде False и item.getQuantity() > 10 да биде False по што целиот израз ќе се евалуира на False.
 Истото ова го пробав и во Gradle со помош на assert изрази и сите тест случаи ми поминаа.
