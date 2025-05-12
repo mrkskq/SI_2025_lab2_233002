@@ -21,7 +21,7 @@
  
 За да се постигне овој критериум ми беа потребни 5 тест случаи.
 
-| | test_case_1 | test_case_2 | test_case_3 | test_case_4 | test_case_5 |
+| C0 | test_case_1 | test_case_2 | test_case_3 | test_case_4 | test_case_5 |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | * | * | * | * | * |
 | 2 | * | | | | |
