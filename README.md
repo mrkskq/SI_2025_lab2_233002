@@ -57,7 +57,7 @@
 
 
 
-### Тест случаи според критериумот Multiple Condition за условот if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
+### Тест случаи според критериумот Multiple Condition за условот </br> if (item.getPrice() > 300 || item.getDiscount() > 0 || item.getQuantity() > 10)
 | | item.getPrice() > 300 | item.getDiscount() > 0 | item.getQuantity() > 10 | 
 | :---: | :---: | :---: | :---: | 
 | 1 | Т | X | X | 
