@@ -72,4 +72,5 @@
 > Објаснување: Во третиов случај ќе земеме item.getPrice() > 300 да биде False, item.getDiscount() > 0 да биде False и item.getQuantity() > 10 да биде True по што целиот израз ќе се евалуира на True. 
 - FFF: ```allItems = List.of(new Item("Book", 5, 200, 0.0)), cardNumber = "0122333444455555"```
 > Објаснување: Во четвртиов случај ќе земеме item.getPrice() > 300 да биде False, item.getDiscount() > 0 да биде False и item.getQuantity() > 10 да биде False по што целиот израз ќе се евалуира на False.
+
 Истото ова го пробав и во Gradle со помош на assert изрази и сите тест случаи ми поминаа.
